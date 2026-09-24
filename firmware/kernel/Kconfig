@@ -1,0 +1,11 @@
+# Paste under drivers/iio/pressure/Kconfig if you build this in-tree
+# instead of the stock Bosch driver. Do not enable both.
+
+config BMP280
+	tristate "Bosch BMP280 pressure sensor (lab IIO driver)"
+	depends on I2C
+	select IIO
+	help
+	  I²C driver for the Bosch BMP280. Exposes processed temperature
+	  (millidegree Celsius) and pressure (kilopascal) through the IIO
+	  sysfs ABI. Matches compatible "bosch,bmp280".

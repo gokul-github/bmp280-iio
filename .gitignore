@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.output/
+.vercel/
+.tanstack/
+.grok/
+artifacts/
+attachments/
+screenshots/
+.project_id
+.node_modules.lock
+*.log
+.DS_Store
+
+# host-built compensation check
+firmware/selftest/selftest
